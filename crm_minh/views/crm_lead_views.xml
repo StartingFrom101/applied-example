@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="crm_lead_action" model="ir.actions.act_window">
+            <field name="name">crm.lead.action</field>
+            <field name="res_model">crm.lead</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="crm_lead_view_tree" model="ir.ui.view">
+            <field name="name">crm.lead.view.tree</field>
+            <field name="model">crm.lead</field>
+            <field name="arch" type="xml">
+                <tree string="name"/>
+                <tree string="partner_id"/>
+                <tree string="stage_id"/>
+                    
+            </field>
+        </record>
+</odoo>
